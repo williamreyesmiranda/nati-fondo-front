@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regístrate - NatiAhorros</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <!-- Encabezado -->
+  <header class="bg-primary text-white py-3">
+    <div class="container text-center">
+      <div class="d-flex align-items-center justify-content-center gap-3">
+        <img src="Imagenes/Imagen de WhatsApp 2025-10-08 a las 20.45.35_d5551ab3.jpg" alt="Logo NatiAhorros" class="rounded" style="width: 60px; height: 60px;">
+        <h1 class="mb-0">NatiAhorros</h1>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navegación Bootstrap -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="servicios.html">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="crud.html">CRUD</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="modelo.html">Modelo BD</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="logica.html">Preguntas frecuentes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="equipo.html">Equipo</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Banner -->
+  <section class="bg-primary text-white py-5">
+    <div class="container text-center">
+      <h2 class="display-4 fw-bold">CRUD</h2>
+      <p class="lead">Crea tu fondo de ahorro y comienza a gestionar tu natillera</p>
+    </div>
+  </section>
+
+  <!-- Contenido principal -->
+  <main class="py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <!-- Tarjeta del formulario -->
+          <div class="card shadow-lg border-0">
+            <div class="card-body p-5">
+              <h3 class="card-title text-primary fw-bold mb-4 text-center">Registrar Nuevo Fondo</h3>
+              
+              <form>
+                <!-- Nombre del Fondo -->
+                <div class="mb-4">
+                  <label for="nombreFondo" class="form-label fw-bold">Nombre del Fondo</label>
+                  <input type="text" class="form-control form-control-lg" id="nombreFondo" placeholder="Ej. Fondo Familiar" required>
+                </div>
+
+                <!-- Tipo de Fondo -->
+                <div class="mb-4">
+                  <label for="tipoFondo" class="form-label fw-bold">Tipo de Fondo</label>
+                  <select class="form-select form-select-lg" id="tipoFondo" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="turno">Turno</option>
+                    <option value="comun">Común</option>
+                    <option value="individual">Individual</option>
+                  </select>
+                </div>
+
+                <!-- Monto de Ahorro -->
+                <div class="mb-4">
+                  <label for="montoAhorro" class="form-label fw-bold">Monto de Ahorro</label>
+                  <div class="input-group input-group-lg">
+                    <span class="input-group-text">$</span>
+                    <input type="number" class="form-control" id="montoAhorro" placeholder="50000" required>
+                  </div>
+                </div>
+
+                <!-- Fecha de Inicio -->
+                <div class="mb-4">
+                  <label for="fechaInicio" class="form-label fw-bold">Fecha de Inicio</label>
+                  <input type="date" class="form-control form-control-lg" id="fechaInicio" required>
+                </div>
+
+                <!-- Botones -->
+                <div class="d-grid gap-2">
+                  <button type="submit" class="btn btn-primary btn-lg fw-bold">
+                    💾 Guardar Fondo
+                  </button>
+                  <button type="reset" class="btn btn-outline-secondary btn-lg">
+                    🔄 Limpiar Formulario
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- Información adicional -->
+          <div class="alert alert-info mt-4 shadow-sm" role="alert">
+            <h5 class="alert-heading"><strong>ℹ️ Información importante:</strong></h5>
+            <p class="mb-0">Al registrar tu fondo, podrás invitar a más participantes, gestionar aportes y llevar un control detallado de todos los movimientos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4 mt-5">
+    <div class="container">
+      <p class="mb-2">&copy; 2025 NatiAhorros - Todos los derechos reservados</p>
+      <div class="d-flex justify-content-center gap-3">
+        <a href="#" class="text-white text-decoration-none">Facebook</a>
+        <a href="#" class="text-white text-decoration-none">Instagram</a>
+        <a href="#" class="text-white text-decoration-none">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
