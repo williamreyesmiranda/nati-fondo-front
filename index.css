@@ -9,17 +9,30 @@
 body {
   background-color: #f8fafc;
   font-family: 'Segoe UI', Arial, sans-serif;
+  padding-top: 180px; /* Espacio para el header y nav fijos */
 }
 
 /* Header personalizado */
 header {
   background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%) !important;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  width: 100%;
 }
 
 /* Navegacion */
 .navbar {
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  position: fixed;
+  top: 116px; /* Altura aproximada del header */
+  left: 0;
+  right: 0;
+  z-index: 999;
+  width: 100%;
 }
 
 .nav-link {
@@ -64,6 +77,14 @@ footer a:hover {
 
 /* Estilos responsivos adicionales */
 @media (max-width: 768px) {
+  body {
+    padding-top: 160px; /* Menos espacio en móviles */
+  }
+  
+  .navbar {
+    top: 100px; /* Ajuste para móviles */
+  }
+  
   .display-4 {
     font-size: 2rem;
   }
